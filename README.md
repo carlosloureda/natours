@@ -1,6 +1,8 @@
 # Natours project
 
-Website dedicated to tours on nature. Project built with HTML/SASS/VanillaJS
+Website dedicated to tours on nature. Project built with HTML/SASS/VanillaJS.
+
+You can see a live version of this website (WIP) at [https://natours-website.netlify.app/](https://natours-website.netlify.app/)
 
 ## Table of Contents
 
