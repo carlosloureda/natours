@@ -1,10 +1,16 @@
 // COLORS
-$color-main-fg: #777;
+$color-primary: #55c57a; // priimary
+$color-primary-light: #7ed56f; //light
+$color-primary-dark: #28b485; //darh
+
+$color-grey-light-1: #f7f7f7;
+
+$color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
-$color-light-green: #7ed56f; //light
-$color-medium-green: #55c57a; // priimary
-$color-dark-green: #28b485; //darh
+
+// FONT
+$default-font-size: 1.6rem;
 
 // GRID
 $grid-width: 114rem;
