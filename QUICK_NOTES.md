@@ -28,4 +28,11 @@
 
 Build a grid system without Flex & Grid
 (branch) grid-sytem
+
+# About Section
+
 (branch) about-section
+
+# Feature Section
+
+(branch) feature-section
