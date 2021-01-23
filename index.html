@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="preload-transitions">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -202,7 +202,7 @@
                     <div class="card__price-only">Only</div>
                     <div class="card__price-value">$297</div>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -232,7 +232,7 @@
                     <div class="card__price-only">Only</div>
                     <div class="card__price-value">$497</div>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -262,7 +262,7 @@
                     <div class="card__price-only">Only</div>
                     <div class="card__price-value">$497</div>
                   </div>
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -454,6 +454,34 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            odit a incidunt itaque, pariatur ipsa nemo quas inventore veniam
+            maiores provident fuga assumenda asperiores cupiditate tempore sequi
+            minima sit culpa. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Libero quasi incidunt et nostrum perspiciatis impedit natus
+            velit similique consequatur aut. Amet rerum delectus eius quia iste
+            laudantium odit velit ducimus.
+          </p>
+          <div class="btn btn--green">Book now</div>
+        </div>
+      </div>
+    </div>
     <!-- Grid example -->
     <!-- <section class="grid-test">
       <div class="row">
@@ -486,4 +514,10 @@
       </div>
     </section> -->
   </body>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      let node = document.querySelector(".preload-transitions");
+      node.classList.remove("preload-transitions");
+    });
+  </script>
 </html>
