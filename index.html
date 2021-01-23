@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="preload-transitions">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -486,4 +486,10 @@
       </div>
     </section> -->
   </body>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      let node = document.querySelector(".preload-transitions");
+      node.classList.remove("preload-transitions");
+    });
+  </script>
 </html>
