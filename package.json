@@ -11,7 +11,8 @@
     "concat:css": "concat -o ./css/style.conact.css ./css/icon-font.css ./css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./css/style.concat.css -o ./css/style.prefix.css",
     "compress:scss": "node-sas ./css/style.prefix.css ./css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass concat:css compress:scss"
+    "build:css": "npm-run-all compile:sass concat:css compress:scss",
+    "build": "npm-run-all compile:sass concat:css compress:scss"
   },
   "repository": {
     "type": "git",
