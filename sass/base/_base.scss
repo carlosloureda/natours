@@ -8,13 +8,41 @@
 }
 
 html {
+  // This defines what 1rem is, here 1 rem = 10px; 62.5%
   font-size: 62.5%;
+
+  // @include responsive-phone {
+  //   font-size: 50%;
+  // }
+
+  // Not needed as we use the same as tablet
+  // @include responsive(phone) {
+  //   font-size: 50%;
+  // }
+
+  // Order matters!
+
+  @include responsive(tab-land) {
+    // 1 rem = 9px => 9/16 = 56.25%
+    font-size: 56.25%;
+  }
+
+  @include responsive(tab-port) {
+    // 1 rem = 8px => 8/16 = 50%
+    font-size: 50%;
+  }
+
+  @include responsive(big-desktop) {
+    // 1 rem = 12px => 12/16 = 75%
+    font-size: 75%;
+  }
 }
 
 body {
   box-sizing: border-box;
 }
 
+// Disable transition on load (with JS)
 .preload-transitions * {
   // Dry this up a bit with SCSS variable
   $null-transition: none !important;
