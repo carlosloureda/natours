@@ -22,16 +22,19 @@ html {
 
   // Order matters!
 
+  // < 1200
   @include responsive(tab-land) {
     // 1 rem = 9px => 9/16 = 56.25%
     font-size: 56.25%;
   }
 
+  // < 900
   @include responsive(tab-port) {
     // 1 rem = 8px => 8/16 = 50%
     font-size: 50%;
   }
 
+  // > 1800
   @include responsive(big-desktop) {
     // 1 rem = 12px => 12/16 = 75%
     font-size: 75%;
@@ -40,6 +43,10 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+  @include responsive(tab-port) {
+    padding: 0;
+  }
 }
 
 // Disable transition on load (with JS)
