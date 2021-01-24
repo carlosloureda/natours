@@ -4,9 +4,14 @@
   "description": "Tours on nature website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass ./sass/main.scss ./css/style.css -w",
-    "build": "node-sass ./sass/main.scss ./css/style.css",
-    "dev": "npm run -- compile:sass & npx serve"
+    "watch:sass": "node-sass ./sass/main.scss ./css/style.comp.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:css",
+    "compile:sass": "node-sass ./sass/main.scss ./css/style.css",
+    "concat:css": "concat -o ./css/style.conact.css ./css/icon-font.css ./css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./css/style.concat.css -o ./css/style.prefix.css",
+    "compress:scss": "node-sas ./css/style.prefix.css ./css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css compress:scss"
   },
   "repository": {
     "type": "git",
@@ -24,6 +29,10 @@
   },
   "homepage": "https://github.com/carlosloureda/natours#readme",
   "devDependencies": {
-    "node-sass": "^4.14.1"
-  }
+    "autoprefixer": "^10.2.3",
+    "concat": "^1.0.3",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {}
 }
