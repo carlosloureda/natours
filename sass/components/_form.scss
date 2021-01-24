@@ -1,6 +1,10 @@
 .form {
   &__group:not(:last-child) {
     margin-bottom: 2rem;
+
+    @include responsive(tab-port) {
+      margin-bottom: 0;
+    }
   }
   &__input {
     font-size: 1.5rem;
@@ -14,6 +18,10 @@
     width: 90%;
     display: block;
     transition: all 0.3s;
+
+    @include responsive(tab-port) {
+      width: 100%;
+    }
 
     &:focus {
       outline: none;
@@ -48,6 +56,11 @@
   &__radio-group {
     width: 49%;
     display: inline-block;
+
+    @include responsive(tab-port) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   /* Hide the real checkbox */
