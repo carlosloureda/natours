@@ -49,6 +49,11 @@ body {
   }
 }
 
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
 // Disable transition on load (with JS)
 .preload-transitions * {
   // Dry this up a bit with SCSS variable
